@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fullscreen Video dengan Iklan di Bawah</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #0000; /* Warna biru langit */
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Kontainer video */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: rgba(135, 206, 235, 0.8);
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: none;
+    }
+
+    /* Banner iklan di luar video (bawah) */
+    .banner-ads {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      color: #000;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 12px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+      z-index: 10000;
+    }
+
+    .banner-ads a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .banner-ads a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Area Video Fullscreen -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline preload="metadata">
+      <source src="https://cdn.videy.co/yjtRxVh41.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video.
+    </video>
+  </div>
+
+  <!-- Banner Iklan di luar video (bawah layar) -->
+  <div class="banner-ads">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a36fdd372e41b75d0538361ee9fb914f',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//pawgleamed.com/a36fdd372e41b75d0538361ee9fb914f/invoke.js"></script>
+    </a>
+  </div>
+</body>
+</html>
